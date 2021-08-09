@@ -20,15 +20,14 @@
 
 -   This Lab as a PDF open in an independent reader. (Not embedded in a browser)
 
-## Pre-Lab - Review videos BEFORE attempting the lab!
+## Review videos BEFORE attempting the lab!
 
-- Review BEFORE starting the lab
-    - [Tech Nugget N0.1 Basic Diagnostic Tools 1]
-    - [Tech Nugget N0.2 Basic Diagnostic Tools 2]
-    - [Tech Nugget N0.3 Basic Diagnostic Tools 3]
-    - [Tech Nugget N0.4 Basic Diagnostic Tools 4]
-    - [Tech Nugget N0.5 Basic Diagnostic Tools 5] 
-    - [Tech Nugget N11.0 NMCLI]
+- [Tech Nugget N0.1 Basic Diagnostic Tools 1]
+- [Tech Nugget N0.2 Basic Diagnostic Tools 2]
+- [Tech Nugget N0.3 Basic Diagnostic Tools 3]
+- [Tech Nugget N0.4 Basic Diagnostic Tools 4]
+- [Tech Nugget N0.5 Basic Diagnostic Tools 5] 
+- [Tech Nugget N11.0 NMCLI]
 
 ### Remote Desktop Gateway Connection
 
@@ -286,15 +285,36 @@ Wireshark is a packet capture tool available on Linux, Mac and Windows for free.
 36. See Wireshark export guide on ITL class Blackboard site for more detail about how to export data for a lab report.
 
 ### Create a GitHub account
-37. This is a public Github site (which is how you can view it now). However, **all other labs will not be public.** Go create a GitHub account. Use your OHIO email address.
+37. The repo that you are viewing this document on a public Github repo (which is how you can view it now). However, **all other labs will not be public.** Create a GitHub account. Use your OHIO email address.
 
 38. Send an email to the course instructors with the new GitHub username. 
 
 39. You will be unable to access any further labs until you create the GitHub account.
 
-**[Toolkit]** Network Diagnostic and Debugging Toolkit - For your LAB NOTEBOOK!
+### Lab Report Template
 
-Unless otherwise noted these are entered at a command line (terminal aka console) prompt:
+40.  Download and review the template MS-Word (.docx) file that is part of this GitHub repo. Use it as a template for how lab reports should be written. It won't answer EVERY question, but it should prove to be a good guide and starting point.
+
+41.  Install DrawIO from https://www.diagrams.net or use the web version. The desktop version is a bit more full featured and does not require a network connection to use.
+
+42.  Download and review the template Diagrams.net AKA DrawIO (.drawio) file that is part of this GitHub repo. Use it as a basic template for diagraming for labs. The template diagram will not have everything in it for every lab (a few labs don't have a Network Diagram). Again, it's a good starting point. 
+
+### Ethernet Card Data 
+
+43. Using one of the following commands `ip a` / `nmcli` / `ipconfig /all` outputs **create a table** that correlates output from each of these commands:
+
+    a.  All interface names
+
+    b.  All IP addresses (ignore IPv6 for now)
+
+    c.  All IP address masks (ignore IPv6 for now)
+
+    d.  All IP broadcast addresses (ignore IPv6 for now)
+
+
+### [Toolkit] Network Diagnostic and Debugging
+
+For your LAB NOTEBOOK! Unless otherwise noted these are entered at a command line (terminal aka console) prompt:
 
 -   `ipconfig /all` - [Windows] Used to display basic network card configuration information on Windows.
 
@@ -307,14 +327,6 @@ Unless otherwise noted these are entered at a command line (terminal aka console
 -   `dig` - [All] Used to convert host names to IPv4 addresses or vice-versa. Web version: http://digwebinterface.com
 
 -   `nslookup` - [All] Also used to convert hostnames to IPv4 addresses. A deprecated version of this command still exists in most major operating systems.
-
-### Lab Report Template
-
-40.  Download and review the template MS-Word (.docx) file that is part of this GitHub repo. Use it as a template for how lab reports should be written. It won't answer EVERY question, but it should prove to be a good guide and starting point.
-
-41.  Install DrawIO from https://www.diagrams.net or use the web version. The desktop version is a bit more full featured and does not require a network connection to use.
-
-42.  Download and review the template Diagrams.net AKA DrawIO (.drawio) file that is part of this GitHub repo. Use it as a basic template for diagraming for labs. The template diagram will not have everything in it for every lab (a few labs don't have a Network Diagram). Again, it's a good starting point. 
 
 ### Lab Report
 
@@ -342,15 +354,7 @@ Each report is to be written individually. Reports will be uploaded to Blackboar
 
 2.  **Show** abbreviated email to yourself from Step 4.
 
-3.  Ethernet Card Data - using `ip a` / `nmcli` outputs **create a table** that correlates output from each of these commands:
-
-    a.  All interface names
-
-    b.  All IP addresses (ignore IPv6 for now)
-
-    c.  All IP address masks (ignore IPv6 for now)
-
-    d.  All IP broadcast addresses (ignore IPv6 for now)
+3.  **Show** table created in the Ethernet Card Data section from above.
 
 4.  Ping Data - **Show** the command used and the first 3 lines of output for each target, and add the average round trip time for each destination on the next line (copy it from the summary line if ping printed one, or calculate it).
 
