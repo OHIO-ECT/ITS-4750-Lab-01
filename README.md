@@ -20,7 +20,7 @@
 
 -   This Lab as a PDF open in an independent reader. (Not embedded in a browser)
 
-## Review videos BEFORE attempting the lab!
+### Review videos BEFORE attempting the lab!
 
 - [Tech Nugget N0.1 Basic Diagnostic Tools 1]
 - [Tech Nugget N0.2 Basic Diagnostic Tools 2]
@@ -59,15 +59,11 @@ Each student has been issued their own Linux Ubuntu Desktop Virtual Machine (VM)
 
 5.  **[Data]** It is also possible to copy/paste text data from the child VMs. Copy "Fine Art Indeed" from this document and past it into the README file.
 
-#### **[Pro Tip]** - This is not where you want to start. Read the Lab Report Guidelines at the end of this document.
-
-> "Knowing the destination generally makes a journey shorter" - ECT Ducky
-
 ### Connecting objects inside GNS3
 
-6.  Using the network diagram shown below in this document connect all the GNS3 objects together. Review [Tech Nugget N1.1 GNS3] (6:20) for detailed instructions how to connect objects together in GNS3.
+6.  Using the network diagram displayed below in this document connect all the GNS3 objects together. Review [Tech Nugget N1.1 GNS3] (6:20) for detailed instructions how to connect objects together in GNS3.
 
-7. **[Toolkit]** Please record in a lab notebook that child VMs inside GNS3 use the username itsclass and the password class115#
+7. **[Toolkit]** Please record, in a lab notebook, that child VMs inside GNS3 use the username itsclass and the password class115#
 
 ### Start GNS3 Project
 
@@ -77,7 +73,7 @@ Each student has been issued their own Linux Ubuntu Desktop Virtual Machine (VM)
 
 10. Once all the child VMs have started and are either at a login prompt to a desktop GUI they are ready for use.
 
-11. It is not always necessary (or desired) to start all objects at once. See context menu of each object to start it individually.
+11. It is not always necessary (or desired) to start all objects at once. Right-Click the object for a context menu to start it individually.
 
 ### GNS3 Context
 
@@ -89,7 +85,7 @@ See [ECT Tech Nuggets Playlist] for more detail. As always, if you have question
 
 Shown above GNS3 and child VMs - GNS3 Window (left), Ubuntu Linux Server (top center), Windows 10 (bottom center), Ubuntu Linux Desktop/GUI (right)
 
-**[Note]** Camera pictures are never permitted in document for lab reports. Screens shots are only acceptable when specifically requested.
+**[Note]** Camera pictures are never permitted in document for lab reports. Screens captures are only acceptable when specifically requested.
 
 ### Fixed Width Fonts
 
@@ -113,30 +109,42 @@ Each operating system has different ways of naming network cards, which we will 
 
     -   Open a terminal window (AKA CLI) [Icon left on side of screen of the Linux Desktop child VM].
 
-    -   **[Data]** At the prompt in the window that opens type ip a
+    -   **[Data]** At the prompt in the window that opens type `ip a`
 
-    -   **[Data]** Also use the nmcli d show command.
+    -   **[Data]** Also use the `nmcli d` show command.
 
 13. On the Ubuntu Linux Server aka Ubuntu Linux CLI
 
     -   Login to Ubuntu Linux Server.
 
-    -   **[Data]** In the Ubuntu Linux Server's terminal use the nmcli d show command.
+    -   **[Data]** In the Ubuntu Linux Server's terminal use the `nmcli d` command.
 
     **[Pro Tip]** The ip and nmcli commands are in use in many Linux distributions and have an extensive number of flags that both show and configure the computers network stack. Search engines and man pages are necessary resources to fully leverage these tools.
 
 14. On the Windows Desktop
 
-    -   Click on the Start Button and type powershell.exe OR Start Button and type cmd [Windows has several CLI environments... Oh yippy]. In this case, either CLI type will work.
+    -   Click on the Start Button and type `powershell.exe` OR Start Button and type `cmd` [Windows has several CLI environments... Oh yippy]. In this case, either CLI type will work.
 
-    -   **[Data]** In one of the Windows CLIs enter 
-        ````
-        ipconfig /all
-        ````
+    -   **[Data]** In either one of the Windows CLIs enter 
+        `ipconfig /all`
+
+### Ethernet Card Data 
+
+15. Use the correct command for the ech GNS3 object (`ip a` / `nmcli d` / `ipconfig /all`) to **create a table** that correlates the following information:
+
+    a.  Object Name
+    
+    b. All interface names
+
+    c.  All IP addresses (ignore IPv6 for now)
+
+    d.  All IP address masks (ignore IPv6 for now)
+
+    e.  All IP broadcast addresses (ignore IPv6 for now)
 
 **[Pro Tip]** Network Interface data is also available through GUI tools. These methods above are the fastest and most detailed way to get network information about IP settings of each of the machines. This will save you time and give you the data you need to solve problems (in this case the problem is the lab report).
 
-### Ping
+### Ping Command
 
 Ping is a basic (the MOST basic) tool for figuring out if a machine has network access. The command will, in effect, bounce packets off the destination machine like a sonar.... PING. The command gives a binary answer either YES it sees something or NO it does not.
 
@@ -146,7 +154,7 @@ Most implementations of ping will repeat the ping process several times; others 
 
 The format of the ping command is ping `<destination>` in the systems in use in this lab. Where `<destination>` is either a hostname like www.google.com or IP address. i.e. ping ip6echo.net
 
-15. **[Data]** Use the ping command on the specified machine to ping the following locations:
+16. **[Data]** Use the ping command on the specified machine to ping the following locations:
 
 -   132.235.1.1 on Ubuntu Linux Desktop/GUI
 
@@ -154,13 +162,13 @@ The format of the ping command is ping `<destination>` in the systems in use in 
 
 -   xkcd.com on the Ubuntu Linux CLI
 
-16. **[Data]** Use the help flag {-h in Linux or /? in windows} to find the properly flag to request 15 ping and then terminate
+17. **[Data]** Use the help flag {-h in Linux or /? in windows} to find the properly flag to request 15 ping and then terminate
 
 -   203.178.141.194 on a Ubuntu Linux Desktop/GUI machine
 
 -   www.kame.net on the Windows machine
 
-### Traceroute 
+### Traceroute Command
 
 The traceroute command gives more detail about the network BETWEEN the machine and the destination.
 
@@ -168,7 +176,7 @@ The traceroute command gives more detail about the network BETWEEN the machine a
 
 **[Pro Tip]** When individual traceroute hit fails lines noted with \* \* \*, which will typically continue until the test has reached 30 hops. Press Ctrl+C to stop it once if you get three or more lines with the \* \* \* notation.
 
-17. In Ubuntu GUI (child VM) access the termina/CLI and issue the command `traceroute -n <destination>` for each of the following destinations. Where `<destination>` is either a hostname like www.google.com or IP address.
+18. In Ubuntu GUI (child VM) access the termina/CLI and issue the command `traceroute -n <destination>` for each of the following destinations. Where `<destination>` is either a hostname like www.google.com or IP address.
 
     **[Data]** Traceroute to the following destinations on the Ubuntu Linux Desktop/GUI:
 
@@ -176,7 +184,7 @@ The traceroute command gives more detail about the network BETWEEN the machine a
 
 -   www.ford.com
 
-18. In Ubuntu Linux CLI (child VM) access the termina/CLI and issue the command `traceroute -n <destination>` for each of the following destinations. Where `<destination>` is either a hostname like www.google.com or IP address.
+19. In Ubuntu Linux CLI (child VM) access the termina/CLI and issue the command `traceroute -n <destination>` for each of the following destinations. Where `<destination>` is either a hostname like www.google.com or IP address.
 
     **[Data]** Traceroute to the following destinations on the Ubuntu Linux CLI:
 
@@ -184,7 +192,7 @@ The traceroute command gives more detail about the network BETWEEN the machine a
 
 -   itsohio.net
 
-19. In Windows 10 (child VM) access the termina/CLI. Windows is limited to eight-character old-school commands (long story why) and uses a different switch to suppress DNS lookups. Access the Windows CLI and issue the command: 
+20. In Windows 10 (child VM) access the termina/CLI. Windows is limited to eight-character old-school commands (long story why) and uses a different switch to suppress DNS lookups. Access the Windows CLI and issue the command: 
     ````
     tracert -d <destination>
     ````
@@ -194,25 +202,25 @@ The traceroute command gives more detail about the network BETWEEN the machine a
 
 -   itsohio.net
 
-## Route Table
+## Route Table Commands
 
 The route table is part of an Internet Protocol enabled network stack, and includes the directions on where network packets should be sent next on their journey from the source host to the destination. The network diagnostic tools to view that table are critical to all the ITL labs.
 
 The command in Linux is `ip route` and in Windows and in older versions of Linux (not used here) `netstat -rn`
 
-20. **[Data]** Use the respective commands to get the route table from each if the machines
+21. **[Data]** Use the respective commands to get the route table from each if the machines
 
-### Name Resolution (DNS) 
+### NSLookup and Dig Command
 
 Converting Internet names to numbers and numbers to names is the responsibility of the Name Resolution services which use the Domain Name System (DNS) protocols. There are two commands that can access this name system.
 
 > Syntax is: `nslookup <destination>`where `<destination>` is either a hostname like www.google.com or IP address.
 
-21. **[Data]** On Ubuntu Linux CLI use nslookup for each of the following host names:
+22. **[Data]** On Ubuntu Linux CLI use nslookup for each of the following host names:
 
     -   www.ohio.edu
 
-22. **[Data]** On Ubuntu Linux Desktop/GUI use nslookup for each of the following host names:
+23. **[Data]** On Ubuntu Linux Desktop/GUI use nslookup for each of the following host names:
 
 -   xkcd.com
 
@@ -221,7 +229,7 @@ Converting Internet names to numbers and numbers to names is the responsibility 
 nslookup can also be configured to use the non-default name servers with the correct command line options.
 > Syntax used is: `nslookup <Target IP> <DNS Server IP>`
 
-23. **[Data]** On Windows use nslookup and Google's public DNS server (8.8.8.8) as the `<DNS Server IP>` for each of the following host names:
+24. **[Data]** On Windows use nslookup and Google's public DNS server (8.8.8.8) as the `<DNS Server IP>` for each of the following host names:
 
 -   132.235.1.1
 
@@ -234,7 +242,7 @@ nslookup can also be configured to use the non-default name servers with the cor
 Dig output returns more information than nslookup giving details of DNS record for that host/IP, but is only available in Linux. 
 > Syntax for name to number lookups is: `dig <destination>` where `<destination>` is either a hostname like www.google.com or IP address. To request a number to name conversion you must include the -x option.
 
-24. **[Data]** On Ubuntu Linux Desktop/GUI use dig for each of the following host names:
+25. **[Data]** On Ubuntu Linux Desktop/GUI use dig for each of the following host names:
 
 -   203.178.141.194
 
@@ -244,7 +252,7 @@ Dig output returns more information than nslookup giving details of DNS record f
 
 -   www.google.com
 
-25. **[Data]** On Ubuntu Linux CLI use dig for each of the following host names:
+26. **[Data]** On Ubuntu Linux CLI use dig for each of the following host names:
 
 -   132.235.67.1
 
@@ -252,65 +260,52 @@ Dig output returns more information than nslookup giving details of DNS record f
 
 -   8.8.8.8
 
-### Wireshark 
+### Wireshark Data
 
 Wireshark is a packet capture tool available on Linux, Mac and Windows for free. This means that it will capture traffic (all or some) that comes to or leaves a NIC on the machine. We will be looking at pre-captured data as an example. From Blackboard, download the ITL sample file called "Lab 01 - ITLsample.pcap". See [ECT Tech Nugget N0.5 Basic Diag Tools 5 Wireshark][Tech Nugget N0.5 Basic Diagnostic Tools 5] for more detail about Wireshark.
 
-26. Install Wireshark on **[your]** machine, if you don't have it already (http://www.wireshark.org/download.html). Install the current stable release.
+27. Install Wireshark on **[your]** machine, if you don't have it already (http://www.wireshark.org/download.html). Install the current stable release.
 
-27. Start Wireshark, then open the "Lab 01 - ITLsample.pcap" file using File/Open. Note that you may not get Wireshark to start by double-clicking a capture file.
+28. Start Wireshark, then open the "Lab 01 - ITLsample.pcap" file using File/Open. Note that you may not get Wireshark to start by double-clicking a capture file.
 
 ### Wireshark MAC Address Information
 
-28. In Wireshark the summary lines are the lines of data shown in the top frame of Wireshark. To select a packet, click anywhere on the summary line.
+29. In Wireshark the summary lines are the lines of data shown in the top frame of Wireshark. To select a packet, click anywhere on the summary line.
 
-29. Scroll down to packet 58. This machine is trying to match the IP address 132.235.233.254 to the corresponding Ethernet (MAC) address using the ARP protocol. The next packet (59) contains the answer, right on the summary line in the top Wireshark window.
+30. Scroll down to packet 58. This machine is trying to match the IP address 132.235.233.254 to the corresponding Ethernet (MAC) address using the ARP protocol. The next packet (59) contains the answer, right on the summary line in the top Wireshark window.
 
 ### Wireshark Filtering for DNS Information
 
-30. Look for packets that use the Domain Name System (DNS). Scrolling down the file looking is an option, but it is pretty large. Instead, look for the "Filter" text box near the top of the window, and type the letters dns into the field. The field should turn green showing that this is a valid filter. Click the "Apply" button. To reset the view, use the "Clear" button.
+31. Look for packets that use the Domain Name System (DNS). Scrolling down the file looking is an option, but it is pretty large. Instead, look for the "Filter" text box near the top of the window, and type the letters dns into the field. The field should turn green showing that this is a valid filter. Click the "Apply" button. To reset the view, use the "Clear" button.
 
-31. In the filtered view, look for a "query" (not a "query response") that has an info field containing:
+32. In the filtered view, look for a "query" (not a "query response") that has an info field containing:
 
     `Standard Query 0x0a44 A miles.its.ohiou.edu`
 
-32. In the "View" menu, select "Expand All". Notice that the middle frame expands the packet data to show **[a lot]** of detail.
+33. In the "View" menu, select "Expand All". Notice that the middle frame expands the packet data to show **[a lot]** of detail.
 
-33. To get packet detail needed into a format where portions of it are can be used in a lab report use File -> Export Packet Display -> As Plain Text...
+34. To get packet detail needed into a format where portions of it are can be used in a lab report use File -> Export Packet Display -> As Plain Text...
 
-34. In the dialog window the pops up, pick "Selected packet" in the "Packet Range" section. Under Packet Format, Packet summary line and usually the "As Displayed" option on the right side needed as well.
+35. In the dialog window the pops up, pick "Selected packet" in the "Packet Range" section. Under Packet Format, Packet summary line and usually the "As Displayed" option on the right side needed as well.
 
-35. Select a location and name for the file. Pressing Save will create a TEXT output of that file for use in a lab report. The packet text output may need some formatting inside Word.
+36. Select a location and name for the file. Pressing Save will create a TEXT output of that file for use in a lab report. The packet text output may need some formatting inside Word.
 
-36. See Wireshark export guide on ITL class Blackboard site for more detail about how to export data for a lab report.
+37. See Wireshark export guide on ITL class Blackboard site for more detail about how to export data for a lab report.
 
 ### Create a GitHub account
-37. The repo that you are viewing this document on a public Github repo (which is how you can view it now). However, **all other labs will not be public.** Create a GitHub account. Use your OHIO email address.
+38. The repo that you are viewing this document on a public Github repo (which is how you can view it now). However, **all other labs will not be public.** Create a GitHub account. Use your OHIO email address.
 
-38. Send an email to the course instructors with the new GitHub username. 
+39. Send an email to the course instructors with the new GitHub username. 
 
-39. You will be unable to access any further labs until you create the GitHub account.
+40. You will be unable to access any further labs until you create the GitHub account.
 
 ### Lab Report Template
 
-40.  Download and review the template MS-Word (.docx) file that is part of this GitHub repo. Use it as a template for how lab reports should be written. It won't answer EVERY question, but it should prove to be a good guide and starting point.
+41.  Download and review the template MS-Word (.docx) file that is part of this GitHub repo. Use it as a template for how lab reports should be written. It won't answer EVERY question, but it should prove to be a good guide and starting point.
 
-41.  Install DrawIO from https://www.diagrams.net or use the web version. The desktop version is a bit more full featured and does not require a network connection to use.
+42.  Install DrawIO from https://www.diagrams.net or use the web version. The desktop version is a bit more full featured and does not require a network connection to use.
 
-42.  Download and review the template Diagrams.net AKA DrawIO (.drawio) file that is part of this GitHub repo. Use it as a basic template for diagraming for labs. The template diagram will not have everything in it for every lab (a few labs don't have a Network Diagram). Again, it's a good starting point. 
-
-### Ethernet Card Data 
-
-43. Using one of the following commands `ip a` / `nmcli` / `ipconfig /all` outputs **create a table** that correlates output from each of these commands:
-
-    a.  All interface names
-
-    b.  All IP addresses (ignore IPv6 for now)
-
-    c.  All IP address masks (ignore IPv6 for now)
-
-    d.  All IP broadcast addresses (ignore IPv6 for now)
-
+43.  Download and review the template Diagrams.net AKA DrawIO (.drawio) file that is part of this GitHub repo. Use it as a basic template for diagraming for labs. The template diagram will not have everything in it for every lab (a few labs don't have a Network Diagram). Again, it's a good starting point. 
 
 ### [Toolkit] Network Diagnostic and Debugging
 
@@ -350,21 +345,19 @@ Each report is to be written individually. Reports will be uploaded to Blackboar
 
 ### Lab Report Questions
 
-1.  Format document - See lab write up guidelines on ITL Blackboard site.
+1.  **Connect to your GNS3 VM section** - **Show** abbreviated email to yourself.
 
-2.  **Show** abbreviated email to yourself from Step 4.
+2.  **Ethernet Card Data** - **Show** table created.
 
-3.  **Show** table created in the Ethernet Card Data section from above.
+3.  **Ping Command** - **Show** the command used and the first 3 lines of output for each target, and add the average round trip time for each destination on the next line (copy it from the summary line if ping printed one, or calculate it).
 
-4.  Ping Data - **Show** the command used and the first 3 lines of output for each target, and add the average round trip time for each destination on the next line (copy it from the summary line if ping printed one, or calculate it).
+4.  **Traceroute Command** - **Show** the command used show the output for all destinations. Note that each line of traceroute output is the results from a new set of probe packets (i.e. times are not always getting longer for later lines in the output). **Show** the single **longest** delay among all times for that set of probe packets shown in the output. Display the answer with a table showing command, destinations, and time.
 
-5.  Traceroute Data - **Show** the command used show the output for all destinations. Note that each line of traceroute output is the results from a new set of probe packets (i.e. times are not always getting longer for later lines in the output). **Show** the single **longest** delay among all times for that set of probe packets shown in the output. Display the answer with a table showing command, destinations, and time.
+5.  **NSLookup Command** - **Show** the IP address of the first hop router (Hint: check traceroute data!). **Show** results for each target into the report, highlight only the host name (or IPs) or names returned for that particular IP address.
 
-6.  Netstat/IP Route Data - **Show** the IP address of the first hop router (Hint: check traceroute data!). **Show** results for each target into the report, highlight only the host name (or IPs) or names returned for that particular IP address.
+6.  **Dig Data** - **Show** results for each target, hightlight only the IPv4 address or addresses returned for that particular hostname. The command line version will return additional names and IP addresses; ignore these for now. Highlight only the host name or names returned for that particular IP address.
 
-7.  Dig/NSLookup data - **Show** results for each target, hightlight only the IPv4 address or addresses returned for that particular hostname. The command line version will return additional names and IP addresses; ignore these for now. Highlight only the host name or names returned for that particular IP address.
-
-8.  Wireshark data - (for help see Lab Writeup Guide and [Tech Nugget N0.5 Wireshark][Tech Nugget N0.5 Basic Diagnostic Tools 5])
+7.  **Wireshark Data** - (for help see Lab Writeup Guide and [Tech Nugget N0.5 Wireshark][Tech Nugget N0.5 Basic Diagnostic Tools 5])
 
     a.  For packet 58, show the MAC address **explain** which part of the address identifies the manufacturer of the card.
 
