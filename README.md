@@ -18,8 +18,6 @@
 
 -   Assigned GNS3 Virtual machine
 
--   This Lab as a PDF open in an independent reader. (Not embedded in a browser)
-
 ### Review videos BEFORE attempting the lab!
 
 - [Tech Nugget N0.1 Basic Diagnostic Tools 1]
