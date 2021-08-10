@@ -1,5 +1,5 @@
 # Lab 1 - The Toolkit
-Test
+
 ### Goals
 
 -   Configure Remote Desktop to connect to the lab environment.
