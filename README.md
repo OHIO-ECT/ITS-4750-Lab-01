@@ -290,7 +290,7 @@ Wireshark is a packet capture tool available on Linux, Mac and Windows for free.
 
 37. See Wireshark export guide on ITL class Blackboard site for more detail about how to export data for a lab report.
 
-### Create a GitHub account
+### Create a GitHub Account
 38. The repo that you are viewing this document on a public Github repo (which is how you can view it now). However, **all other labs will not be public.** Create a GitHub account. Use your OHIO email address.
 
 39. Send an email to the course instructors with the new GitHub username. 
@@ -360,6 +360,8 @@ Each report is to be written individually. Reports will be uploaded to Blackboar
     a.  For packet 58, show the MAC address **explain** which part of the address identifies the manufacturer of the card.
 
     b.  From DNS data **show** entire Wireshark packet output from the packet.
+
+8. **Create a GitHub Account** - email GitHub account name to instructors.
 
 ### Network Diagram
 
