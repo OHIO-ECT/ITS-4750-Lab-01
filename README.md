@@ -341,7 +341,7 @@ Each report is to be written individually. Reports will be uploaded to Blackboar
 
 -   Terminal window data often needs to be reformatted to remove the extra line breaks. While this report is long future ones will be **much** longer. Removing the extra line breaks will save much space. A smaller font can also be used for terminal window data or adjust margins for that data to stop line wrapping.
 
-### Lab Report Questions - Final Deliverable
+### Lab Report Questions
 
 1.  **Connect to your GNS3 VM section** - **Show** abbreviated email to yourself.
 
