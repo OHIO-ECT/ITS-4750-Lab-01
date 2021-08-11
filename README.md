@@ -49,39 +49,39 @@ Each student has been issued their own Linux Ubuntu Desktop Virtual Machine (VM)
 
 2.  Watch the "Remote Desktop Gateway Connection" pre-lab videos for the complete procedures to connect to the GNS3 VM
 
-    -   RD Gateway IP/Hostname: its-s15.its.ohio.edu
+    -   RD Gateway IP/Hostname: `its-s15.its.ohio.edu`
 
 3.  **[Pro Tip]** The GNS3 machine has web access to the outside world. When saving data for lab reports there are several options. The easiest is to use a browser on the GNS3 machine to access web-based email.
 
 4.  **[Data]** Open the file named "README.txt" on the VM's desktop. Email the contents (i.e. copy/paste text content of the file to an email) to your OHIO ID.
 
-5.  **[Data]** It is also possible to copy/paste text data from the child VMs. Copy "Fine Art Indeed" from this document and past it into the README file.
+5.  **[Data]** It is also possible to copy/paste text data from the GNS3 VMs. Copy "Fine Art Indeed" from this document and past it into the README file.
 
 ### Connecting objects inside GNS3
 
 6.  Using the network diagram displayed below in this document connect all the GNS3 objects together. Review [Tech Nugget N1.1 GNS3] (6:20) for detailed instructions how to connect objects together in GNS3.
 
-7. **[Toolkit]** Please record, in a lab notebook, that child VMs inside GNS3 use the username itsclass and the password class115#
+7. **[Toolkit]** Please record, in a lab notebook, that GNS3 VMs inside GNS3 use the username `itsclass` and the password `class115#`
 
 ### Start GNS3 Project
 
 8.  Start all components in the project with the big green triangle.
 
-9.  **[Pro Tip]** All the VMs will start at once. Get comfy as Atlas heaves the world up. The more objects in a project the longer this start up time will take. If you don't know who Atlas is you'll have some time to read [this] while the all the child VMs start.
+9.  **[Pro Tip]** All the VMs will start at once. Get comfy as Atlas heaves the world up. The more objects in a project the longer this start up time will take. If you don't know who Atlas is you'll have some time to read [this] while the all the GNS3 VMs (aka child VMs) start.
 
-10. Once all the child VMs have started and are either at a login prompt to a desktop GUI they are ready for use.
+10. Once all the GNS3 VMs have started and are either at a login prompt to a desktop GUI they are ready for use.
 
 11. It is not always necessary (or desired) to start all objects at once. Right-Click the object for a context menu to start it individually.
 
 ### GNS3 Context
 
-After starting up the project each child VM object will open a child window. There should be three child windows inside the GNS3 machine. One is a Ubuntu Linux Server (terminal only), second is Ubuntu Linux Desktop (GUI but there's a terminal option), third is Windows 10 (with two terminal options described below). In a very [Inception]-type way each child VM can have windows of its own in side it's GUI. If this idea gives you a headache you are [doing it correctly]. Much of what we do as IT Professional is virtual. This lab environment is a very good example.
+After starting up the project each GNS3 VM object will open a child window. There should be three child windows inside the GNS3 machine. One is a Ubuntu Linux Server (terminal only), second is Ubuntu Linux Desktop (GUI but there's a terminal option), third is Windows 10 (with two terminal options described below). In a very [Inception] - way each GNS3 VM can have windows of its own in side it's GUI. If this idea gives you a headache you are **doing it correctly**. Much of what we do as IT Professional is virtual. This lab environment is a very good example.
 
 See [ECT Tech Nuggets Playlist] for more detail. As always, if you have questions it's your responsibility to ASK for help! We can't know if you don't understand!
 
 ![][1]
 
-Shown above GNS3 and child VMs - GNS3 Window (left), Ubuntu Linux Server (top center), Windows 10 (bottom center), Ubuntu Linux Desktop/GUI (right)
+Shown above GNS3 and GNS3 VMs - GNS3 Window (left), Ubuntu Linux Server (top center), Windows 10 (bottom center), Ubuntu Linux Desktop/GUI (right)
 
 **[Note]** Camera pictures are never permitted in document for lab reports. Screens captures are only acceptable when specifically requested.
 
@@ -105,7 +105,7 @@ Each operating system has different ways of naming network cards, which we will 
 
 12. On the Ubuntu Linux Desktop aka Ubuntu Linux Desktop/GUI
 
-    -   Open a terminal window (AKA CLI) [Icon left on side of screen of the Linux Desktop child VM].
+    -   Open a terminal window (AKA CLI) [Icon left on side of screen of the Linux Desktop GNS3 VM].
 
     -   **[Data]** At the prompt in the window that opens type `ip a`
 
@@ -150,7 +150,7 @@ The best network debugging processes start with pinging another machine that is 
 
 Most implementations of ping will repeat the ping process several times; others will run continuously until user presses CTRL+C to stop the process.
 
-The format of the ping command is ping `<destination>` in the systems in use in this lab. Where `<destination>` is either a hostname like www.google.com or IP address. i.e. ping ip6echo.net
+The format of the ping command is `ping <destination>`. Where `<destination>` is replaced with either a hostname or IP. For example `ping google.com` or `ping 8.8.8.8`
 
 16. **[Data]** Use the ping command on the specified machine to ping the following locations:
 
@@ -160,7 +160,7 @@ The format of the ping command is ping `<destination>` in the systems in use in 
 
 -   xkcd.com on the Ubuntu Linux CLI
 
-17. **[Data]** Use the help flag {-h in Linux or /? in windows} to find the properly flag to request 15 ping and then terminate
+17. **[Data]** Use the help command line flag (`-h` for Linux or `/?` for Windows) to find the properly flag to request 15 pings and then terminate.
 
 -   203.178.141.194 on a Ubuntu Linux Desktop/GUI machine
 
@@ -172,29 +172,30 @@ The traceroute command gives more detail about the network BETWEEN the machine a
 
 **[Pro Tip]** The -n or the -d option suppresses DNS hostname lookups on many commands. Typically, DNS names are not necessary for network diagnostics and consume time and create unwanted network traffic.
 
-**[Pro Tip]** When individual traceroute hit fails lines noted with \* \* \*, which will typically continue until the test has reached 30 hops. Press Ctrl+C to stop it once if you get three or more lines with the \* \* \* notation.
+**[Pro Tip]** When individual traceroute hit fails lines noted with `* * *`, which will typically continue until the test has reached 30 hops. Press Ctrl+C to stop it once if you get three or more lines with the `* * *` notation.
 
-18. In Ubuntu GUI (child VM) access the termina/CLI and issue the command `traceroute -n <destination>` for each of the following destinations. Where `<destination>` is either a hostname like www.google.com or IP address.
+18. In Ubuntu GUI (GNS3 VM) access the terminal/CLI and use the traceroute command.
+> Syntax is: `traceroute -n <destination>` Where `<destination>` is replaced with either a hostname or IP.
 
-    **[Data]** Traceroute to the following destinations on the Ubuntu Linux Desktop/GUI:
+**[Data]** Traceroute to the following destinations on the Ubuntu Linux Desktop/GUI:
 
 -   132.235.8.133
 
 -   www.ford.com
 
-19. In Ubuntu Linux CLI (child VM) access the termina/CLI and issue the command `traceroute -n <destination>` for each of the following destinations. Where `<destination>` is either a hostname like www.google.com or IP address.
+19. In Ubuntu Linux CLI (GNS3 VM) access the terminal/CLI and use the traceroute command.
+> Syntax is: `traceroute -n <destination>` Where `<destination>` is replaced with either a hostname or IP.
 
-    **[Data]** Traceroute to the following destinations on the Ubuntu Linux CLI:
+**[Data]** Traceroute to the following destinations on the Ubuntu Linux CLI:
 
 -   132.235.1.1
 
 -   itsohio.net
 
-20. In Windows 10 (child VM) access the termina/CLI. Windows is limited to eight-character old-school commands (long story why) and uses a different switch to suppress DNS lookups. Access the Windows CLI and issue the command: 
-    ````
-    tracert -d <destination>
-    ````
-    **[Data]** In Windows, traceroute to the following destinations:
+20. In Windows 10 (GNS3 VM) access the terminal/CLI. Windows is limited to eight-character old-school commands (long story why) and uses a different switch to suppress DNS lookups. Access the Windows CLI and issue the command: 
+> Syntax is: `tracert -d <destination>` Where `<destination>` is replaced with either a hostname or IP.
+
+**[Data]** In Windows, traceroute to the following destinations:
 
 -   132.235.1.1
 
@@ -204,19 +205,19 @@ The traceroute command gives more detail about the network BETWEEN the machine a
 
 The route table is part of an Internet Protocol enabled network stack, and includes the directions on where network packets should be sent next on their journey from the source host to the destination. The network diagnostic tools to view that table are critical to all the ITL labs.
 
-The command in Linux is `ip route` and in Windows and in older versions of Linux (not used here) `netstat -rn`
+The command in Linux is `ip route` and in Windows and in older versions of Linux (not used here) `netstat -rn`.
 
-21. **[Data]** Use the respective commands to get the route table from each if the machines
+21. **[Data]** Use the respective commands to get the route table from each if the machines.
 
 ### NSLookup and Dig Command
 
-Converting Internet names to numbers and numbers to names is the responsibility of the Name Resolution services which use the Domain Name System (DNS) protocols. There are two commands that can access this name system.
+Converting Internet names to numbers and numbers to names is the responsibility of the Name Resolution services which use the Domain Name System (DNS) protocols. There are two commands that can access this name system. 
 
-> Syntax is: `nslookup <destination>`where `<destination>` is either a hostname like www.google.com or IP address.
+> Syntax is: `nslookup <destination>` Where `<destination>` is replaced with either a hostname or IP.
 
 22. **[Data]** On Ubuntu Linux CLI use nslookup for each of the following host names:
 
-    -   www.ohio.edu
+-   www.ohio.edu
 
 23. **[Data]** On Ubuntu Linux Desktop/GUI use nslookup for each of the following host names:
 
@@ -224,10 +225,10 @@ Converting Internet names to numbers and numbers to names is the responsibility 
 
 -   69.58.0.32
 
-nslookup can also be configured to use the non-default name servers with the correct command line options.
+24. nslookup can also be configured to use the non-default name servers with the correct command line options.
 > Syntax used is: `nslookup <Target IP> <DNS Server IP>`
 
-24. **[Data]** On Windows use nslookup and Google's public DNS server (8.8.8.8) as the `<DNS Server IP>` for each of the following host names:
+**[Data]** On Windows use nslookup and Google's public DNS server (8.8.8.8) as the `<DNS Server IP>` for each of the following host names:
 
 -   132.235.1.1
 
@@ -237,10 +238,10 @@ nslookup can also be configured to use the non-default name servers with the cor
 
 -   98.139.183.24
 
-Dig output returns more information than nslookup giving details of DNS record for that host/IP, but is only available in Linux. 
-> Syntax for name to number lookups is: `dig <destination>` where `<destination>` is either a hostname like www.google.com or IP address. To request a number to name conversion you must include the -x option.
+25. Dig output returns more information than nslookup giving details of DNS record for that host/IP, but is only available in Linux. 
+> Syntax is: `dig <destination>` Where `<destination>` is replaced with either a hostname or IP. To request a number to name conversion you must include the `-x` option.
 
-25. **[Data]** On Ubuntu Linux Desktop/GUI use dig for each of the following host names:
+ **[Data]** On Ubuntu Linux Desktop/GUI use dig for each of the following host names:
 
 -   203.178.141.194
 
@@ -262,7 +263,7 @@ Dig output returns more information than nslookup giving details of DNS record f
 
 Wireshark is a packet capture tool available on Linux, Mac and Windows for free. This means that it will capture traffic (all or some) that comes to or leaves a NIC on the machine. We will be looking at pre-captured data as an example. From Blackboard, download the ITL sample file called "Lab 01 - ITLsample.pcap". See [ECT Tech Nugget N0.5 Basic Diag Tools 5 Wireshark][Tech Nugget N0.5 Basic Diagnostic Tools 5] for more detail about Wireshark.
 
-27. Install Wireshark on **[your]** machine, if you don't have it already (http://www.wireshark.org/download.html). Install the current stable release.
+27. Install Wireshark on **your** machine, if not installed already (http://www.wireshark.org/download.html). Install the current stable release.
 
 28. Start Wireshark, then open the "Lab 01 - ITLsample.pcap" file using File/Open. Note that you may not get Wireshark to start by double-clicking a capture file.
 
@@ -278,7 +279,9 @@ Wireshark is a packet capture tool available on Linux, Mac and Windows for free.
 
 32. In the filtered view, look for a "query" (not a "query response") that has an info field containing:
 
-    `Standard Query 0x0a44 A miles.its.ohiou.edu`
+```
+Standard Query 0x0a44 A miles.its.ohiou.edu
+```
 
 33. In the "View" menu, select "Expand All". Notice that the middle frame expands the packet data to show **[a lot]** of detail.
 
@@ -286,7 +289,7 @@ Wireshark is a packet capture tool available on Linux, Mac and Windows for free.
 
 35. In the dialog window the pops up, pick "Selected packet" in the "Packet Range" section. Under Packet Format, Packet summary line and usually the "As Displayed" option on the right side needed as well.
 
-36. Select a location and name for the file. Pressing Save will create a TEXT output of that file for use in a lab report. The packet text output may need some formatting inside Word.
+36. Select a location and name for the file. Pressing Save will create a **TEXT** output of that file for use in a lab report. The packet text output may need some formatting inside Word.
 
 37. See Wireshark export guide on ITL class Blackboard site for more detail about how to export data for a lab report.
 
@@ -299,7 +302,7 @@ Wireshark is a packet capture tool available on Linux, Mac and Windows for free.
 
 ### Lab Report Template
 
-41.  Download and review the template MS-Word (.docx) file that is part of this GitHub repo. Use it as a template for how lab reports should be written. It won't answer EVERY question, but it should prove to be a good guide and starting point.
+41.  Download and review the template MS-Word (.docx) file that is part (shown above) of this GitHub repo. Use it as a template for how lab reports should be written. It won't answer EVERY question, but it should prove to be a good guide and starting point.
 
 42.  Install DrawIO from https://www.diagrams.net or use the web version. The desktop version is a bit more full featured and does not require a network connection to use.
 
