@@ -20,13 +20,13 @@
 
 -   Assigned GNS3 Virtual machine
 
-##### Technuggets 
+### Technuggets 
 
 Labs will often have associated Technuggets that are recommended viewing after reading the lab the first time but before starting the work on the lab.  Skip them at your own risk.
 
-**[Pro Tip]** Do NOT follow along with the Technuggets while watching them for the first time as a resource.   
+**[Pro Tip]** Do NOT follow along with the Technuggets while watching them for the first time.  Only take action when instructed to do so in the Lab Instruction section! 
 
-- [Tech Nugget N14.0 RDC Connections] 
+- [Tech Nugget N14.0 RDC Connections] - This is a general reference for Remote Desktop. The Remote Desktop client is all that is needed for all the labs in this class, and is available in EVERY version of the Windows operating system.  You do NOT need Microsoft Windows Pro for this class.  
 - [Tech Nugget N15.0 RD Gateway] 
 
 Additional guide For Mac/OSX:
@@ -211,7 +211,7 @@ The traceroute command gives more detail about the network BETWEEN the machine a
 
 -   itsohio.net
 
-## Route Table Commands
+### Route Table Commands
 
 The route table is part of an Internet Protocol enabled network stack, and includes the directions on where network packets should be sent next on their journey from the source host to the destination. The network diagnostic tools to view that table are critical to all the ITL labs.
 
@@ -318,7 +318,7 @@ Standard Query 0x0a44 A miles.its.ohiou.edu
 
 43.  Download and review the template Diagrams.net AKA DrawIO (.drawio) file that is part of this GitHub repo. Use it as a basic template for diagraming for labs. The template diagram will not have everything in it for every lab (a few labs don't have a Network Diagram). Again, it's a good starting point. 
 
-### [Toolkit] Network Diagnostic and Debugging
+## [Toolkit] Network Diagnostic and Debugging
 
 For your LAB NOTEBOOK! Unless otherwise noted these are entered at a command line (terminal aka console) prompt:
 
@@ -334,7 +334,7 @@ For your LAB NOTEBOOK! Unless otherwise noted these are entered at a command lin
 
 -   `nslookup` - [All] Also used to convert hostnames to IPv4 addresses. A deprecated version of this command still exists in most major operating systems.
 
-### Lab Report
+## Lab Report
 
 Each report is to be written individually. Reports will be uploaded to Blackboard electronically in PDF format (ONLY!). Reports do not generally need to be more than a few (several) pages. Officially, they need to be "long enough to answer the questions". See the report writing guidelines provided on the course Blackboard for more details. Each lab report must have a header (**no cover pages!**) on the first page that includes:
 
@@ -344,7 +344,7 @@ Each report is to be written individually. Reports will be uploaded to Blackboar
 
 -   Your affiliation (CS ugrad, CS grad, ITS ugrad, ITS grad)
 
-### Lab Report Tips
+## Lab Report Tips
 
 -   For terminal window data (ping, traceroute, netstat etc.) data should be formatted with a fixed width font like courier to preserve the columns and displayed as shown on screen.
 
@@ -354,7 +354,7 @@ Each report is to be written individually. Reports will be uploaded to Blackboar
 
 -   Terminal window data often needs to be reformatted to remove the extra line breaks. While this report is long future ones will be **much** longer. Removing the extra line breaks will save much space. A smaller font can also be used for terminal window data or adjust margins for that data to stop line wrapping.
 
-### Lab Report Questions
+## Lab Report Questions
 
 1.  **Connect to your GNS3 VM section** - **Show** abbreviated email to yourself.
 
@@ -376,7 +376,7 @@ Each report is to be written individually. Reports will be uploaded to Blackboar
 
 8. **Create a GitHub Account** - email GitHub account name to instructors.
 
-### Network Diagram
+## Network Diagram
 
 ![][2]
 
