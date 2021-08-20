@@ -12,7 +12,7 @@
 
 -   Learn some basic network connectivity-testing tools and basic equipment configuration
 
-### Resources
+# Resources
 
 -   Personal Computer
 
@@ -31,7 +31,6 @@ Labs will often have associated Technuggets that are recommended viewing before 
 
 ### Remote Desktop Gateway Connection
 
-Review [Tech Nugget N14.0 RDC Connections] and [Tech Nugget N15.0 RD Gateway] to learn about how to access sessions via RDC. If you are a Mac/OSX user also view [Tech Nugget N17.0 RDC and RD Gateway Apple Mac OSX]. Other OS's are not officially supported, you will need to do some research to figure out what you need.
 
 ### Ubuntu GUI
 
@@ -39,7 +38,7 @@ Review [Tech Nugget N25.0 - Ubuntu 20.04 Intro] to get an overview of how the Ub
 
 ### Connect to your GNS3 VM
 
-Each student has been issued their own Linux Ubuntu Desktop Virtual Machine (VM)
+Each student has been issued their own Linux Ubuntu Desktop Virtual Machine (VM).  Review [Tech Nugget N14.0 RDC Connections] and [Tech Nugget N15.0 RD Gateway] to learn about how to access sessions via RDC. If you are a Mac/OSX user also view [Tech Nugget N17.0 RDC and RD Gateway Apple Mac OSX]. Other OS's are not officially supported, you will need to do some research to figure out what you need.
 
 1.  Receive the following information from class administrators (Faculty, Lab Manager, Lab Assistant)
 
