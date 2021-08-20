@@ -20,11 +20,11 @@
 
 -   Assigned GNS3 Virtual machine
 
-### Technuggets 
+### Tech Nuggets
 
-Labs will often have associated Technuggets that are recommended viewing after reading the lab the first time but before starting the work on the lab.  Skip them at your own risk.
+Labs will often have associated Tech Nuggets that are recommended viewing after reading the lab the first time but before starting the work on the lab.  Skip them at your own risk.
 
-**[Pro Tip]** Do NOT follow along with the Technuggets while watching them for the first time.  Only take action when instructed to do so in the Lab Instruction section! 
+**[Pro Tip]** Do NOT follow along with the Tech Nuggets while watching them for the first time.  Only take action when instructed to do so in the Lab Instruction section! 
 
 - [Tech Nugget N14.0 RDC Connections] - This is a general reference for Remote Desktop. The Remote Desktop client is all that is needed for all the labs in this class, and is available in EVERY version of the Windows operating system.  You do NOT need Microsoft Windows Pro for this class.  
 - [Tech Nugget N15.0 RD Gateway] 
@@ -356,25 +356,25 @@ Each report is to be written individually. Reports will be uploaded to Blackboar
 
 ## Lab Report Questions
 
-1.  **Connect to your GNS3 VM section** - **Show** abbreviated email to yourself.
+1.  From the **Connect to your GNS3 VM** section - **Show** the abbreviated email to yourself.
 
-2.  **Ethernet Card Data** - **Show** table created.
+2.  From the **Ethernet Card Data** section - **Show** table created.
 
-3.  **Ping Command** - **Show** the command used and the first 3 lines of output for each target, and add the average round trip time for each destination on the next line (copy it from the summary line if ping printed one, or calculate it).
+3.  From the **Ping Command** section - **Show** the command used and the first 3 lines of output for each target, and add the average round trip time for each destination on the next line (copy it from the summary line if ping printed one, or calculate it).
 
-4.  **Traceroute Command** - **Show** the command used show the output for all destinations. Note that each line of traceroute output is the results from a new set of probe packets (i.e. times are not always getting longer for later lines in the output). **Show** the single **longest** delay among all times for that set of probe packets shown in the output. Display the answer with a table showing command, destinations, and time.
+4.  From the **Traceroute Command** section - **Show** the command used show the output for all destinations. Note that each line of traceroute output is the results from a new set of probe packets (i.e. times are not always getting longer for later lines in the output). **Show** the single **longest** delay among all times for that set of probe packets shown in the output. Display the answer with a table showing command, destinations, and time.
 
-5.  **NSLookup Command** - **Show** the IP address of the first hop router (Hint: check traceroute data!). **Show** results for each target into the report, highlight only the host name (or IPs) or names returned for that particular IP address.
+5.  From the **NSLookup Command** section - **Show** the IP address of the first hop router (Hint: check traceroute data!). **Show** results for each target into the report, highlight only the host name (or IPs) or names returned for that particular IP address.
 
-6.  **Dig Data** - **Show** results for each target, hightlight only the IPv4 address or addresses returned for that particular hostname. The command line version will return additional names and IP addresses; ignore these for now. Highlight only the host name or names returned for that particular IP address.
+6.  From the **Dig Data** section - **Show** results for each target, hightlight only the IPv4 address or addresses returned for that particular hostname. The command line version will return additional names and IP addresses; ignore these for now. Highlight only the host name or names returned for that particular IP address.
 
-7.  **Wireshark Data** - (for help see Lab Writeup Guide and [Tech Nugget N0.5 Wireshark][Tech Nugget N0.5 Basic Diagnostic Tools 5])
+7.  From the **Wireshark Data** section - (for help see Lab Writeup Guide and [Tech Nugget N0.5 Wireshark][Tech Nugget N0.5 Basic Diagnostic Tools 5])
 
     a.  For packet 58, show the MAC address **explain** which part of the address identifies the manufacturer of the card.
 
     b.  From DNS data **show** entire Wireshark packet output from the packet.
 
-8. **Create a GitHub Account** - email GitHub account name to instructors.
+8. From the **Create a GitHub Account** section - email GitHub account name to instructors.
 
 ## Network Diagram
 
