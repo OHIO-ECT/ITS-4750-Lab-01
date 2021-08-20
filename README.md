@@ -20,11 +20,11 @@
 
 -   Assigned GNS3 Virtual machine
 
-### Technuggets 
+### Tech Nuggets
 
-Labs will often have associated Technuggets that are recommended viewing after reading the lab the first time but before starting the work on the lab.  Skip them at your own risk.
+Labs will often have associated Tech Nuggets that are recommended viewing after reading the lab the first time but before starting the work on the lab.  Skip them at your own risk.
 
-**[Pro Tip]** Do NOT follow along with the Technuggets while watching them for the first time.  Only take action when instructed to do so in the Lab Instruction section! 
+**[Pro Tip]** Do NOT follow along with the Tech Nuggets while watching them for the first time.  Only take action when instructed to do so in the Lab Instruction section! 
 
 - [Tech Nugget N14.0 RDC Connections] - This is a general reference for Remote Desktop. The Remote Desktop client is all that is needed for all the labs in this class, and is available in EVERY version of the Windows operating system.  You do NOT need Microsoft Windows Pro for this class.  
 - [Tech Nugget N15.0 RD Gateway] 
