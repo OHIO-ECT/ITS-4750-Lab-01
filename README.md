@@ -356,7 +356,7 @@ Each report is to be written individually. Reports will be uploaded to Blackboar
 
 ## Lab Report Questions
 
-1.  **Connect to your GNS3 VM section** - **Show** abbreviated email to yourself.
+1.  From the **Connect to your GNS3 VM section** - **Show** the abbreviated email to yourself.
 
 2.  **Ethernet Card Data** - **Show** table created.
 
