@@ -316,7 +316,7 @@ Standard Query 0x0a44 A miles.its.ohiou.edu
 
 42.  Install DrawIO from https://www.diagrams.net or use the web version. The desktop version is a bit more full featured and does not require a network connection to use.
 
-43.  Download and review the template Diagrams.net AKA DrawIO (.drawio) file that is part of this GitHub repo. Use it as a basic template for diagraming for labs. The template diagram will not have everything in it for every lab (a few labs don't have a Network Diagram). Again, it's a good starting point. 
+43.  Download and review the template Diagrams.net AKA DrawIO (.drawio) file that is part of this GitHub repo. Use it as a basic template for diagramming for labs. The template diagram will not have everything in it for every lab (a few labs don't have a Network Diagram). Again, it's a good starting point. 
 
 ## [Toolkit] Network Diagnostic and Debugging
 
