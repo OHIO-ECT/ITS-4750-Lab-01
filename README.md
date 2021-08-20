@@ -4,13 +4,13 @@
 
 -   Configure Remote Desktop to connect to the lab environment.
 
--   Learn some basic network connectivity-testing tools and basic equipment configuration
-
 -   Work with Ubuntu Linux Desktop GUI and Terminal/CLI
 
 -   Work with Windows GUI and Terminal/CLI
 
 -   Learn Basic GNS3 Connectivity between objects
+
+-   Learn some basic network connectivity-testing tools and basic equipment configuration
 
 ### Resources
 
@@ -19,6 +19,8 @@
 -   Assigned GNS3 Virtual machine
 
 ### Review videos BEFORE attempting the lab!
+
+Labs will often have associated Technuggets that are recommended viewing before starting the lab.  Skip them at your own risk.
 
 - [Tech Nugget N0.1 Basic Diagnostic Tools 1]
 - [Tech Nugget N0.2 Basic Diagnostic Tools 2]
@@ -55,7 +57,7 @@ Each student has been issued their own Linux Ubuntu Desktop Virtual Machine (VM)
 
 4.  **[Data]** Open the file named "README.txt" on the VM's desktop. Email the contents (i.e. copy/paste text content of the file to an email) to your OHIO ID.
 
-5.  **[Data]** It is also possible to copy/paste text data from the GNS3 VMs. Copy "Fine Art Indeed" from this document and past it into the README file.
+5.  **[Data]** It is also possible to copy/paste text data from the GNS3 VMs. Copy "Fine Art Indeed" from this document and paste it into the README file.
 
 ### Connecting objects inside GNS3
 
