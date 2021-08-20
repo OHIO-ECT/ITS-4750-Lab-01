@@ -12,15 +12,29 @@
 
 -   Learn some basic network connectivity-testing tools and basic equipment configuration
 
-# Resources
+## Resources
+
+**[Pro Tip]** Read every lab document (like this one), gather all the required resources, and consume all the additional resources before beginning any work on the lab.
 
 -   Personal Computer
 
 -   Assigned GNS3 Virtual machine
 
-### Review videos BEFORE attempting the lab!
+##### Technuggets 
 
-Labs will often have associated Technuggets that are recommended viewing before starting the lab.  Skip them at your own risk.
+Labs will often have associated Technuggets that are recommended viewing after reading the lab the first time but before starting the work on the lab.  Skip them at your own risk.
+
+**[Pro Tip]** Do NOT follow along with the Technuggets while watching them for the first time as a resource.   
+
+- [Tech Nugget N14.0 RDC Connections] 
+- [Tech Nugget N15.0 RD Gateway] 
+
+Additional guide For Mac/OSX:
+- [Tech Nugget N17.0 RDC and RD Gateway Apple Mac OSX]
+
+Other OS's are not officially supported, but may be possible.
+
+- [Tech Nugget N25.0 - Ubuntu 20.04 Intro]
 
 - [Tech Nugget N0.1 Basic Diagnostic Tools 1]
 - [Tech Nugget N0.2 Basic Diagnostic Tools 2]
@@ -29,16 +43,11 @@ Labs will often have associated Technuggets that are recommended viewing before 
 - [Tech Nugget N0.5 Basic Diagnostic Tools 5] 
 - [Tech Nugget N11.0 NMCLI]
 
-### Remote Desktop Gateway Connection
-
-
-### Ubuntu GUI
-
-Review [Tech Nugget N25.0 - Ubuntu 20.04 Intro] to get an overview of how the Ubuntu Desktop functions.
+## Lab Instructions
 
 ### Connect to your GNS3 VM
 
-Each student has been issued their own Linux Ubuntu Desktop Virtual Machine (VM).  Review [Tech Nugget N14.0 RDC Connections] and [Tech Nugget N15.0 RD Gateway] to learn about how to access sessions via RDC. If you are a Mac/OSX user also view [Tech Nugget N17.0 RDC and RD Gateway Apple Mac OSX]. Other OS's are not officially supported, you will need to do some research to figure out what you need.
+Each student has been issued their own Linux Ubuntu Desktop Virtual Machine (VM).  This system will be referred to as the "GNS3 VM" throughout the lab. 
 
 1.  Receive the following information from class administrators (Faculty, Lab Manager, Lab Assistant)
 
