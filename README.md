@@ -26,6 +26,8 @@ Labs will often have associated Tech Nuggets that are recommended viewing after 
 
 **[Pro Tip]** Do NOT follow along with the Tech Nuggets while watching them for the first time.  Only take action when instructed to do so in the Lab Instruction section! 
 
+- [How to RDP] - Text Reference to help get connected to GNS3 VM
+
 - [Tech Nugget N14.0 RDC Connections] - This is a general reference for Remote Desktop. The Remote Desktop client is all that is needed for all the labs in this class, and is available in EVERY version of the Windows operating system.  You do NOT need Microsoft Windows Pro for this class.  
 - [Tech Nugget N15.0 RD Gateway] 
 
@@ -391,6 +393,7 @@ Each report is to be written individually. Reports will be uploaded to Blackboar
   [Tech Nugget N0.5 Basic Diagnostic Tools 5]: https://youtu.be/QTIbS9wyfag
   [Tech Nugget N11.0 NMCLI]: https://youtu.be/43F51qVz9Ds
   [Tech Nugget N1.1 GNS3]: https://www.youtube.com/watch?v=w5qsM3LhpQI
+  [How to RDP]: https://sites.google.com/site/ohioitslab/home/how-to/rd-gateway
   [this]: https://greekgodsandgoddesses.net/gods/atlas/
   [Inception]: https://www.imdb.com/title/tt1375666/
   [ECT Tech Nuggets Playlist]: https://www.youtube.com/playlist?list=PLEA5GnkCPRTlvN_eyR99jOSsBCaV6khRS
