@@ -368,7 +368,7 @@ Each report is to be written individually. Reports will be uploaded to Blackboar
 
 4.  From the **Traceroute Command** section - **Show** the command used show the output for all destinations. Note that each line of traceroute output is the results from a new set of probe packets (i.e. times are not always getting longer for later lines in the output). **Show** the single **longest** delay among all times for that set of probe packets shown in the output. Display the answer with a table showing command, destinations, and time.
 
-5.  From the **Route Table Commands** section - **Show** the IP address of the router AKA default gateway (Hint: check traceroute data!). **Show** results for each router into the report.
+5.  From the **Route Table Commands** section - **Show** the IP address of the router AKA default gateway for each GNS3 VM (Hint: check traceroute data!). **Show** results for each router into the report.
 
 6.  From the **Dig Data** section - **Show** results for each target, hightlight only the IPv4 address or addresses returned for that particular hostname. The command line version will return additional names and IP addresses; ignore these for now. Highlight only the host name or names returned for that particular IP address.
 
