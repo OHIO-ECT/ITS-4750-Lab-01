@@ -121,13 +121,13 @@ Each operating system has different ways of naming network cards, which we will 
 
     -   **[Data]** At the prompt in the window that opens type `ip a`
 
-    -   **[Data]** Also use the `nmcli d` show command.
+    -   **[Data]** Also use the `nmcli` show command.
 
 13. On the Ubuntu Linux Server aka Ubuntu Linux CLI
 
     -   Login to Ubuntu Linux Server.
 
-    -   **[Data]** In the Ubuntu Linux Server's terminal use the `nmcli d` command.
+    -   **[Data]** In the Ubuntu Linux Server's terminal use the `nmcli` command.
 
     **[Pro Tip]** The ip and nmcli commands are in use in many Linux distributions and have an extensive number of flags that both show and configure the computers network stack. Search engines and man pages are necessary resources to fully leverage these tools.
 
@@ -140,7 +140,7 @@ Each operating system has different ways of naming network cards, which we will 
 
 ### Ethernet Card Data 
 
-15. Use the correct command for the ech GNS3 object (`ip a` / `nmcli d` / `ipconfig /all`) to **create a table** that correlates the following information:
+15. Use the correct command for the ech GNS3 object (`ip a` / `nmcli` / `ipconfig /all`) to **create a table** that correlates the following information:
 
     a.  Object Name
     
