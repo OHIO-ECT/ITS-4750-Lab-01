@@ -217,9 +217,11 @@ The traceroute command gives more detail about the network BETWEEN the machine a
 
 The route table is part of an Internet Protocol enabled network stack, and includes the directions on where network packets should be sent next on their journey from the source host to the destination. The network diagnostic tools to view that table are critical to all the ITL labs.
 
-The command in Linux is `ip route` and in Windows and in older versions of Linux (not used here) `netstat -rn`.
+The command in Linux is `ip route`.
 
-21. **[Data]** Use the respective commands to get the route table from each if the machines.
+In Windows `netstat -rn`.
+
+21. **[Data]** Use the respective commands to get the route table from each of the machines.
 
 ### NSLookup and Dig Command
 
@@ -366,7 +368,7 @@ Each report is to be written individually. Reports will be uploaded to Blackboar
 
 4.  From the **Traceroute Command** section - **Show** the command used show the output for all destinations. Note that each line of traceroute output is the results from a new set of probe packets (i.e. times are not always getting longer for later lines in the output). **Show** the single **longest** delay among all times for that set of probe packets shown in the output. Display the answer with a table showing command, destinations, and time.
 
-5.  From the **netstat Command** section - **Show** the IP address of the first hop router (Hint: check traceroute data!). **Show** results for each target into the report, highlight only the host name (or IPs) or names returned for that particular IP address.
+5.  From the **Route Table Commands** section - **Show** the IP address of the router AKA default gateway (Hint: check traceroute data!). **Show** results for each router into the report.
 
 6.  From the **Dig Data** section - **Show** results for each target, hightlight only the IPv4 address or addresses returned for that particular hostname. The command line version will return additional names and IP addresses; ignore these for now. Highlight only the host name or names returned for that particular IP address.
 
