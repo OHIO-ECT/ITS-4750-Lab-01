@@ -370,7 +370,7 @@ Each report is to be written individually. Reports will be uploaded to Blackboar
 
 5.  From the **Route Table Commands** section - **Show** the IP address of the router AKA default gateway for each GNS3 VM (Hint: check traceroute data!). **Show** results for each router in the report.
 
-6.  From the **Dig Data** section - **Show** results for each target, hightlight only the IPv4 address or addresses returned for that particular hostname. The command line version will return additional names and IP addresses; ignore these for now. Highlight only the host name or names returned for that particular IP address.
+6.  From the **NSLookup and Dig Command** section - **Show** results for each target, hightlight only the IPv4 address or addresses returned for that particular hostname. The command line version will return additional names and IP addresses; ignore these for now. Highlight only the host name or names returned for that particular IP address.
 
 7.  From the **Wireshark Data** section - (for help see Lab Writeup Guide and [Tech Nugget N0.5 Wireshark][Tech Nugget N0.5 Basic Diagnostic Tools 5])
 
