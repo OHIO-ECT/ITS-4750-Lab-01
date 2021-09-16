@@ -322,7 +322,7 @@ Standard Query 0x0a44 A miles.its.ohiou.edu
 
 43.  Download and review the template Diagrams.net AKA DrawIO (.drawio) file that is part of this GitHub repo. Use it as a basic template for diagramming for labs. The template diagram will not have everything in it for every lab (a few labs don't have a Network Diagram). Again, it's a good starting point. 
 
-## [Toolkit] Network Diagnostic and Debugging
+### Toolkit Network Diagnostic and Debugging
 
 For your LAB NOTEBOOK! Unless otherwise noted these are entered at a command line (terminal aka console) prompt:
 
@@ -374,9 +374,9 @@ Each report is to be written individually. Reports will be uploaded to Blackboar
 
 7.  From the **Wireshark Data** section - (for help see Lab Writeup Guide and [Tech Nugget N0.5 Wireshark][Tech Nugget N0.5 Basic Diagnostic Tools 5])
 
-    a.  For packet 58, show the MAC address **explain** which part of the address identifies the manufacturer of the card.
+    a.  Find packet 58, show the full MAC address (don't let Wireshark hide parts). **Explain** which part of the address identifies the manufacturer of the card.
 
-    b.  From DNS data **show** entire Wireshark packet output from the packet.
+    b.  Find DNS data in the capture and **show** entire Wireshark packet output from the packet.
 
 8. From the **Create a GitHub Account** section - email GitHub account name to instructors.
 
