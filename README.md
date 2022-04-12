@@ -28,8 +28,7 @@ Labs will often have associated Tech Nuggets that are recommended viewing after 
 
 - [How to RDP] - Text Reference to help get connected to GNS3 VM
 
-- [Tech Nugget N14.0 RDC Connections] - This is a general reference for Remote Desktop. The Remote Desktop client is all that is needed for all the labs in this class, and is available in EVERY version of the Windows operating system.  You do NOT need Microsoft Windows Pro for this class.  
-- [Tech Nugget N15.0 RD Gateway] 
+- [Tech Nugget - N14.1 - RDC for ECT Dept] - This reference for Remote Desktop Connection Client. It is needed for all the labs in this class, and is available in EVERY version of the Windows and Apple operating system.
 
 Additional guide For Mac/OSX:
 - [Tech Nugget N17.0 RDC and RD Gateway Apple Mac OSX]
@@ -384,8 +383,7 @@ Each report is to be written individually. Reports will be uploaded to Blackboar
 
 ![][2]
 
-  [Tech Nugget N14.0 RDC Connections]: https://youtu.be/qv7vglHUObk
-  [Tech Nugget N15.0 RD Gateway]: https://www.youtube.com/watch?v=_AfOdcuYesg
+  [Tech Nugget - N14.1 - RDC for ECT Dept]: https://youtu.be/H52fC9hCmdk
   [Tech Nugget N17.0 RDC and RD Gateway Apple Mac OSX]: https://youtu.be/g1oYzEham8c
   [Tech Nugget N25.0 - Ubuntu 20.04 Intro]: https://youtu.be/X4bfK24sbzM
   [Tech Nugget N0.1 Basic Diagnostic Tools 1]: https://youtu.be/_pRXauSnU6U
